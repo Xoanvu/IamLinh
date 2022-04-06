@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5;
+}
+
+.clear {
+    clear: both;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #00323F;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#nav li:hover a {
+    color: #fff;
+    background-color: #00706C;
+}
+
+#header .socials-icon {
+    float: right;
+    line-height: 46px;
+    padding: 0 10px;
+}
+
+#header .socials-icon a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#introduce {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 46px;
+    height: 600px;
+    width: 1349px;
+    background-image: url(../img/introduce/br.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#introduce .image-intro {
+    margin: 70px 10px 50px 50px;
+}
+
+#introduce img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#introduce .text-intro {
+    align-self: center;
+    margin: 0px 50px 0px 100px ;
+
+}
+
+#introduce .text-intro .text-intro-first {
+    margin-bottom: 50px;
+}
+
+#introduce .text-intro .text-intro-first .text-heading {
+    font-size: 50px;
+    color: #00323F;
+}
+
+#introduce .text-intro .text-intro-first .text-description {
+    font-size: 16px;
+}
+
+#introduce .text-intro-second {
+    list-style: none;
+}
+
+#introduce .text-intro-second li {
+    margin: 10px;
+}
+
+#introduce .text-intro-second li label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#introduce .text-intro-second li span {
+    font-size: 16px;
+}
+
+#content .education {
+    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+#content .education-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #00323F;
+    text-transform: uppercase;
+}
+
+#content .education-list {
+    margin-top: 60px;
+}
+
+#content .education-img {
+    height: 180px;
+}
+
+#content .education-items {
+    text-align: center;
+}
+
+#content .school-name {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#content .school-time {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#content .experience {
+    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+#content .experience-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #00323F;
+    text-transform: uppercase;
+}
+
+#content .experience-list {
+    margin-top: 60px;
+}
+
+#content .experience-items {
+    padding: 20px;
+    background-color: #DEF2B3;
+    color: #00323F;
+    border-radius: 0 20px 20px 20px ;
+    margin-bottom: 20px;
+    
+}
+
+#content .job-name {
+    font-size: 20px;
+}
+
+#content .company-name {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#content .job-detail {
+    font-size: 15px;
+}
+
+#content .job-date {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#content .hobby {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 100px;
+    width: 1349px;
+    height: 450px;
+    background-color: #00323F;
+}
+
+#content .hobby-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#content .hobby-list {
+    margin-top: 60px;
+}
+
+#content .hobby-items {
+    width: calc(100% / 5);
+    text-align: center;
+}
+
+#content .hobby-img {
+    height: 100px;
+}
+#content .hobby-name {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #fff;
+}
+
+#content .contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 100px;
+}
+
+#content .contact-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #00323F;
+    text-transform: uppercase;
+}
+
+#content .contact-detail {
+    margin-top: 50px;
+}
+
+.contact-info {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #00323F;
+}
+
+.contact-info i[class*="ti-"] {
+    display:inline-block;
+    width: 30px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .submit-button {
+    background-color: #00323F;
+    color: #fff;
+    border: 1px solid #00323F;
+    padding: 10px 16px;
+    float: right;
+}
+
+.contact-form .submit-button:hover {
+    cursor: pointer;
+}
+
+#footer {
+    padding: 0 16px 64px;
+    text-align: center;
+}
+
+
+
